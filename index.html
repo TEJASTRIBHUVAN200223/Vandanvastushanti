@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -231,13 +231,18 @@
     .vss-slide {
       flex: 0 0 100%;
       scroll-snap-align: start;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff6ee;
     }
     
     .vss-slide img {
       width: 100%;
-      max-height: 380px;
-      object-fit: cover;
+      height: 420px;
+      object-fit: contain;
       display: block;
+      background: #fff6ee;
     }
     
     .vs-gallery-controls {
@@ -361,7 +366,8 @@
     
     /* Hero improvement */
     .vss-slide img {
-      max-height: 420px;
+      height: 420px;
+      object-fit: contain;
     }
     
     /* Card elevation */
@@ -614,7 +620,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-33W2R44VY8"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag(){dataLayer.push(arguments);} 
   gtag('js', new Date());
 
   gtag('config', 'G-33W2R44VY8');
@@ -630,7 +636,7 @@
     <div class="vs-header-inner">
 
       <!-- LEFT: LOGO -->
-      <img src="assets/Vandan%20Logo.png" class="vs-header-logo" alt="Vandan Logo">
+      <img src="assets/Logo%20white.png" class="vs-header-logo" alt="Vandan Logo">
 
       <!-- RIGHT: PHONE ICON -->
       <a href="tel:+918104030300" class="vs-header-call">
@@ -1049,3 +1055,6 @@ function sendToGoogleSheet(event) {
 </body>
 
 </html>
+
+
+
