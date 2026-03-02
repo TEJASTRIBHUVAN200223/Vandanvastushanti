@@ -245,6 +245,24 @@
       background: #fff6ee;
     }
     
+    /* Desktop: 16:9 aspect ratio - larger size */
+    @media (min-width: 768px) {
+      .vss-slide img {
+        aspect-ratio: 16 / 9;
+        height: auto;
+        max-height: 700px;
+      }
+    }
+    
+    /* Mobile: 3:2 aspect ratio - different from desktop */
+    @media (max-width: 767px) {
+      .vss-slide img {
+        aspect-ratio: 3 / 2;
+        height: auto;
+        max-height: 500px;
+      }
+    }
+    
     .vs-gallery-controls {
       position: absolute;
       bottom: 12px;
@@ -655,9 +673,6 @@
       <div class="vss-slider">
         <div class="vss-slide active">
           <img src="assets/Vastushanti%201.png" alt="Vastu gallery image 1">
-        </div>
-        <div class="vss-slide">
-          <img src="assets/Vastushanti%202.png" alt="Vastu gallery image 2">
         </div>
         <div class="vss-slide">
           <img src="assets/Vastushanti%203.png" alt="Vastu gallery image 3">
